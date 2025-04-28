@@ -1,0 +1,24 @@
+<!-- res/xml/actions.xml -->
+<actions xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <action
+        android:name="actions.intent.OPEN_APP_FEATURE">
+        <fulfillment>
+            <urlTemplate>samplevoiceapp://openfeature</urlTemplate>
+        </fulfillment>
+        <parameter
+            android:name="feature"
+            android:key="feature" />
+    </action>
+
+    <action
+        android:name="com.sample.voiceassistantapp.GET_FASTAG_BALANCE"
+        android:label="Fetch FASTag balance"
+        android:shortcutId="fetch_fastag_balance"
+        android:description="@string/fetch_fastag_balance_description">
+        <!-- No 'fulfillmentMode' needed here -->
+        <intent>
+            <action android:name="com.sample.voiceassistantapp.GET_FASTAG_BALANCE" />
+        </intent>
+    </action>
+</actions>

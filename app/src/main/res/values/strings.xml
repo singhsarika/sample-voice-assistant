@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">VoiceAssistantApp</string>
+    <string name="fetch_fastag_balance_description">Fetch your FASTag balance from your linked account</string>
+</resources>
